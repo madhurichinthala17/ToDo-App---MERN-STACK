@@ -6,6 +6,6 @@ const router=Router()
 router.get('/', getToDo)
 router.post('/save', saveToDo)
 router.post('/update', updateToDo)
-router.delete('/delete',deleteToDo)
+router.delete('/delete/:_id',deleteToDo)
 
 module.exports=router;
